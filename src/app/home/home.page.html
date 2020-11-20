@@ -14,7 +14,19 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button (click)="showSettings()">NFC settings</ion-button>
+    <ion-button (click)="checkEnabled()">NFC enabled?</ion-button>
+    <ion-button (click)="readNdef()">listen to Ndef</ion-button>
+    <ion-button (click)="removeNdef()">stop listen to Ndef</ion-button>
+    <ion-button (click)="readNTag()">realisten to NTag</ion-button>
+    <ion-button (click)="removeNTag()">stop listen to NTag</ion-button>
+    <ion-button (click)="writeToTag()">write tag</ion-button>
+    <ion-button (click)="shareMessage()">share message</ion-button>
+    <ion-button (click)="unShareMessage()">unshare message</ion-button>
+    <ion-button (click)="eraseTag()">erase ndef tag</ion-button>
+    <ion-button (click)="startSession()">start scan session</ion-button>    
+    <ion-button (click)="startSessionTag()">start scan session UID</ion-button>
+    <ion-button (click)="endSession()">end scan session</ion-button>
+
   </div>
 </ion-content>

@@ -1,5 +1,7 @@
 {
   "name": "nfc-test",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
